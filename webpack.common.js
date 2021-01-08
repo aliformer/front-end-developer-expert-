@@ -1,7 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
   entry: path.resolve(__dirname, 'src/scripts/index.js'),
   output: {
@@ -29,15 +28,7 @@ module.exports = {
                   loader: "css-loader"
               }
           ]
-      },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        use: [
-          {
-            loader: 'file-loader'       
-          }
-        ]
-      },
+      },      
     ],
   },
   plugins: [

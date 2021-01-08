@@ -1,8 +1,8 @@
 .hero {
-    background-image: url("../../../public/images/heros/hero-image_4.jpg");
+    background-image: url("/images/heros/hero-image_4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;        
+    background-position:center;   
     margin: 0 40px;
     margin-top: 100px;
     margin-bottom: 40px;
@@ -17,12 +17,15 @@
     text-align: center;
     margin-top: 150px;
     font-size: 44px;
+    text-shadow: 0 5px 8px rgba(0,0,0,0.5);
     
 }
 .hero-subtitle{
     margin:10px auto;
     font-size: 28px;
     text-align: center;
+    text-shadow: 0 5px 8px rgba(0,0,0,0.5);
+    
 }
 
 @media only screen and (max-width: 600px) {
